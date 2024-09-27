@@ -2,6 +2,8 @@
 
 This project analyzes a physical pendulum using video data, fitting it to a damped oscillation model to calculate parameters like the quality factor.
 
+[Watch the video](https://www.youtube.com/watch?v=_IjEzDffBGM)
+
 ## Project Structure
 
 - **`data.csv`**: Contains time (`t`) and position (`x`) data.
@@ -22,17 +24,10 @@ This project analyzes a physical pendulum using video data, fitting it to a damp
    Normalizes `x`-coordinate to a range of -1 to 1, then converts to meters.
 
 2. **Curve Fitting**:
-   Fits position data to the damped oscillation model:
-   \[
-   x(t) = A e^{-bt} \cos(wt - \phi)
-   \]
+   Fits position data to the damped oscillation model
 
 3. **Physical Parameter Calculation**:
    - **Period (`T`)** and **Quality Factor (`Q`)**:
-   \[
-   Q = \frac{2\pi}{1 - e^{-2bT}}
-   \]
-   Results are saved in `resultados.txt`.
 
 4. **Data Visualization**:
    - Scatter plot of `x` vs `t` data points.
